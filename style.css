@@ -228,7 +228,6 @@ body {
   grid-template-rows: repeat(3, 1fr);
   gap: 20px;
   background-color: white;
-  background-color: white;
   border-radius: 10px;
   padding: 30px;
 }
@@ -253,6 +252,35 @@ body {
 
 .announcement-desc {
   font-size: 0.9rem;
+  color: gray;
+}
+
+.trending .title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trend-container {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.trend {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.trend-info-container span {
+  display: block;
+}
+
+.trend-project-title {
   color: gray;
 }
 
