@@ -20,6 +20,58 @@ body {
 .sidebar {
   background-color: var(--blue-color);
   grid-row: 1 / 3;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  padding: 20px;
+  color: white;
+  font-weight: bold;
+}
+
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav,
+.branding {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.logo .sidebar-item {
+  gap: 10px;
+}
+
+.icon-container {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo img {
+  width: 60px;
+}
+
+.nav .sidebar-item img,
+.branding .sidebar-item img {
+  width: 30px;
+}
+
+.sidebar .logo .sidebar-item span {
+  font-size: 2rem;
+}
+
+.sidebar .nav .sidebar-item span,
+.sidebar .branding .sidebar-item span {
+  font-size: 1.25rem;
+}
+
+.sidebar-item img {
+  filter: invert(100%) sepia(0%) saturate(7500%) hue-rotate(65deg) brightness(112%) contrast(101%);
 }
 
 .header {
