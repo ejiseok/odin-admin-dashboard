@@ -200,7 +200,7 @@ body {
 }
 
 .project-desc {
-  color: gray;
+  color: rgb(92, 92, 92);
 }
 
 .project-icon-container {
@@ -215,6 +215,45 @@ body {
   height: 1.7rem;
   background-color: white;
   border: none;
+}
+
+.announcements .title {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.announcement-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 20px;
+  background-color: white;
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.announcement {
+  border-bottom: 2px solid var(--gray-color);
+  padding-bottom: 20px;
+}
+
+.announcement:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+.announcement span {
+  display: block;
+}
+
+.announcement-title {
+  font-weight: bold;
+}
+
+.announcement-desc {
+  font-size: 0.9rem;
+  color: gray;
 }
 
 .small-profile-img {
