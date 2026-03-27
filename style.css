@@ -76,8 +76,104 @@ body {
 
 .header {
   background-color: white;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  align-items: center;
+  padding: 20px 80px 20px 50px;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.search button {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: white;
+  border: none;
+}
+
+.search button img {
+  width: 100%;
+}
+
+.search input {
+  width: 700px;
+  height: 2rem;
+  border: none;
+  border-radius: 1rem;
+  background-color: var(--gray-color);
+}
+
+.notify {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  gap: 20px;
+}
+
+.notify button {
+  width: 1.7rem;
+  height: 1.7rem;
+  background-color: white;
+  border: none;
+}
+
+.notify .username {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.user-info .info-container {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+.info-container .user-name-id {
+  font-size: 1.5rem;
+}
+
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.control-button {
+  background-color: var(--blue-color);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 20px;
+  width: 120px;
+  height: 40px;
 }
 
 .main-content {
   background-color: var(--gray-color);
+}
+
+.small-profile-img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: yellow;
+}
+
+.big-profile-img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: yellow;
 }
